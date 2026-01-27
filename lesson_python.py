@@ -1,12 +1,12 @@
 
-# import random
-#
-# random.seed("seed")
-# print(random.randint(1,1000))
-# print(random.randint(1,1000))
-# print(random.randint(1,1000))
-#
-# print(round(1.444444444444458, 3))
+import random
+
+random.seed("seed")
+print(random.randint(1,1000))
+print(random.randint(1,1000))
+print(random.randint(1,1000))
+
+print(round(1.444444444444458, 3))
 
 # индексы и слайсы
 
@@ -34,4 +34,27 @@ print(email[::-1])
 assert email.endswith("@domain.com")
 
 # форматируем
+
+a = "Hello"
+b = "World"
+
+print(a + b)
+print("{a}, {b}!".format(a=a, b=b))
+print(f"{a}, {b.upper()}!")
+print(f"{a=}, {b=}!")
+print("%s, %s!" % (a, b))
+
+url_template = "http://www.example.com/{}"
+
+users_url = url_template.format("users")
+groups_url = url_template.format("groups")
+
+print(users_url)
+print(groups_url)
+
+s = "12345"
+n = 12345
+
+assert s == str(n)
+assert int(s) == n
 
