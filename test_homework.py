@@ -92,3 +92,14 @@ def test_dicts():
     assert len(d) == 5
     assert list(d.keys()) == first
     assert list(d.values()) == second
+
+def number_list():
+    numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    print(numbers)
+    sum_numbers = sum(numbers)
+    print(sum_numbers)
+
+
+def test_lists():
+    numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
