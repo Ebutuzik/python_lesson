@@ -8,6 +8,7 @@ def browser_management():
     browser.config.base_url = 'https://ru.wikipedia.org/'
     driver_options = webdriver.ChromeOptions()
     driver_options.add_argument('--headless=new')
+    # driver_options.add_argument('window-size=1920x1080')
     browser.config.driver_options = driver_options
 
     yield
